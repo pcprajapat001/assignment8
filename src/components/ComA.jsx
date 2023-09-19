@@ -1,8 +1,13 @@
 import React from "react";
-export const ComA= ()=>{
+export const ComA= ({text,text2,id})=>{
     return(
-        <div className="sub1">
-            <h3>Component B</h3>
+        <div id={id} className="sub1">
+            <div>
+            <h3 id={id}>{text}</h3>
+            
+            <h3 id={id}>{text2}</h3>
+
+            </div>
         </div>
     )
 }
